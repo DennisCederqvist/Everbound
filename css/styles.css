@@ -2,4 +2,217 @@
 * {
     margin: 0;
     padding: 0;
+    color: #2b2b2b;
+    border: 1px solid red;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: antiquewhite;
+    font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+h1 {
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 70px;
+    font-weight: normal;
+    line-height: 1.05;
+    letter-spacing: .2px;
+    margin-bottom: 10px;
+    text-wrap: balance;
+    overflow-wrap: break-word;
+}
+
+h2 {
+    color: #6b4f3b;
+    line-height: 1.6;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+/* navbar start here */
+
+hr {
+    width: 98%;
+    margin: auto;
+    border-bottom: 1px solid #979797;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    /* border-bottom: 2px solid #979797; */
+    flex-wrap: wrap;
+}
+
+.container img {
+    max-width: 100px;
+}
+
+.linklist {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.linklist li {
+    list-style: none;
+}
+
+.linklist a {
+    text-decoration: none;
+    background-color: white;
+    font-weight: 600;
+    padding: 10px 15px;
+    margin: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+    transition: transform .3s ease, box-shadow .3s ease;
+    display: inline-block;
+}
+
+.linklist a:hover {
+    transform: translateY(-3px);
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+
+/* main starts here */
+
+main {
+    flex: 1 0 auto;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    max-width: 1000px;
+    gap: 25px;
+    margin: auto;
+    place-items: center;
+    padding: 50px;
+    justify-content: center;
+}
+
+.leftbox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.btn a {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    background: #fff;
+    padding: 10px 15px;
+    border-radius: 50px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow .3s ease;
+    margin: 10px;
+}
+
+.btn a:hover {
+    transform: translateY(-3px);
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.btn a:nth-of-type(2) {
+    background: #6b4f3b;
+    color: #fff;
+}
+
+.largelogo {
+    justify-self: center;
+}
+
+.largelogo img{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+/* fotter starts here */
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.partners{
+    justify-content: center;
+}
+
+.partners {
+    justify-content: center;
+}
+
+.partners a {
+    text-decoration: none;
+}
+
+.partners p {
+    font-weight: 600;
+}
+
+.partners a {
+    display: inline-block;
+    transition: transform .3s ease;
+}
+
+.partners a:hover{
+    transform: scale(1.1);
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.links a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: #fff;
+    border-radius: 50px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.links a:hover {
+    transform: translateY(-3px);
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+/* media querie */
+
+@media (max-width: 375px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 16px;
+    }
+
+    .links {
+        flex-direction: column;
+        align-items: center;
+        /* width: 100%; */
+    }
 }
