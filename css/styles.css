@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     color: #2b2b2b;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 html, body {
@@ -142,6 +142,23 @@ main {
     max-width: 400px;
     height: auto;
 }
+
+/* scetion within main starts here */
+
+section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1000px;
+    margin: auto;
+}
+
+.card {
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px 30px;
+    border-radius: 20px;
+}
+
 /* fotter starts here */
 
 .footer {
@@ -214,5 +231,9 @@ main {
         flex-direction: column;
         align-items: center;
         /* width: 100%; */
+    }
+
+    .links a {
+        width: min(100%, 240px)
     }
 }
